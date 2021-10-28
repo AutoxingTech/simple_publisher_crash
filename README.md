@@ -17,7 +17,7 @@ so I'll assume protocol synchronization is lost
 
 Sometimes the memory usage soars and cause program crash.
 
-I created this simple program, and successfully reproduced it.
+I created this simple program, and successfully reproduced it. When run `rostopic echo /my_alerts`, it will eat up all memory.
 
 **NOTE: It only happens with GCC release version**:
 
