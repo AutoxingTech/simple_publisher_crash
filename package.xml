@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="2">
-    <name>ax_platform_monitor</name>
+    <name>simple_publisher_crash</name>
     <version>1.0.0</version>
     <description>
-        Check nodes heartbeat.
+        test for simple publisher
     </description>
     <author>pangmj</author>
     <maintainer email="pangmj@autoxing.com">pangmj</maintainer>
@@ -15,7 +15,6 @@
     <depend>roscpp</depend>
     <depend>std_msgs</depend>
     <depend>ax_msgs</depend>
-    <depend>nc_runtime</depend>
 
     <test_depend>roslib</test_depend>
     <test_depend>rospy</test_depend>

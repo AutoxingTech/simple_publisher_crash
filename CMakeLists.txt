@@ -33,7 +33,7 @@ target_link_libraries(simple_publisher_crash ${catkin_LIBRARIES})
 
 # Install executables and/or libraries
 
-install(TARGETS simple_publisher_crash ax_ros_common
+install(TARGETS simple_publisher_crash
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 install(DIRECTORY launch
