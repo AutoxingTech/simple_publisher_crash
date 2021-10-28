@@ -28,12 +28,13 @@ include_directories(
     ${Boost_INCLUDE_DIRS}
 )
 
-add_executable(simple_publisher_crash src/simple_publisher_crash.cpp)
-target_link_libraries(simple_publisher_crash ${catkin_LIBRARIES})
+add_executable(${PROJECT_NAME} "src/simple_publisher_crash.cpp")
+add_dependencies(${PROJECT_NAME} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(${PROJECT_NAME} PRIVATE ${catkin_LIBRARIES})
 
 # Install executables and/or libraries
 
-install(TARGETS simple_publisher_crash
+install(TARGETS ${PROJECT_NAME}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 install(DIRECTORY launch
