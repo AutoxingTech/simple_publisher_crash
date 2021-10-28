@@ -11,10 +11,10 @@
     <license>BSD</license>
 
     <buildtool_depend version_gte="0.5.68">catkin</buildtool_depend>
+    <build_depend>message_generation</build_depend>
 
     <depend>roscpp</depend>
     <depend>std_msgs</depend>
-    <depend>ax_msgs</depend>
 
     <test_depend>roslib</test_depend>
     <test_depend>rospy</test_depend>

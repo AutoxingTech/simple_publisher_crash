@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 project(simple_publisher_crash)
 
-include("platform_detect.cmake")
-
 add_compile_options(-Werror)  # make all warning into error
 add_compile_options(-Wno-unused-variable)
 add_compile_options(-Wno-unused-parameter)
@@ -12,11 +10,24 @@ find_package(catkin REQUIRED
         COMPONENTS
             roscpp
             std_msgs
-            ax_msgs
+            message_generation
         )
 
 find_package(Boost REQUIRED COMPONENTS filesystem)
-# find_package(nc_runtime REQUIRED)
+
+add_message_files(
+  DIRECTORY
+    msg
+  FILES
+    Alert.msg
+    Alerts.msg
+)
+
+# Generate added messages and services with any dependencies listed here
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
 
 catkin_package(
     CATKIN_DEPENDS
