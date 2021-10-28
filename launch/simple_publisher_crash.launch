@@ -1,0 +1,5 @@
+<launch>
+	<arg name="output" default="screen"/>
+	<node name="simple_publisher_crash" pkg="simple_publisher_crash" type="simple_publisher_crash" output="$(arg output)">
+	</node>
+</launch>

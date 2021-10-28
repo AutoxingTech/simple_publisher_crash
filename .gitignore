@@ -1,0 +1,8 @@
+.git/
+build/
+bin/
+*.pyc
+cmake-build-debug/
+ros_plugin/devel
+ros_plugin/build
+ros_plugin/install
