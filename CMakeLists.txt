@@ -19,8 +19,8 @@ add_message_files(
   DIRECTORY
     msg
   FILES
-    Alert.msg
-    Alerts.msg
+    MyAlert.msg
+    MyAlerts.msg
 )
 
 # Generate added messages and services with any dependencies listed here
