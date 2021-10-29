@@ -3,6 +3,7 @@
 - [Bug Description](#bug-description)
 - [Screenshot](#screenshot)
 - [Program to Reproduct the Bug](#program-to-reproduct-the-bug)
+- [Progress](#progress)
 
 ## Bug Description
 
@@ -70,3 +71,13 @@ int main(int argc, char** argv)
     return 0;
 }
 ```
+
+## Progress
+
+- 2021-10-29 Modifying the structure of AlertMsg.msg workarounds the problem miraculously.
+
+  ```
+  int32 code
+  int32 level # modify this field from string to int32
+  string msg
+  ```
