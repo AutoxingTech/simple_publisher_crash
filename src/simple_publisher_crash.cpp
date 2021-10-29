@@ -18,6 +18,7 @@ int main(int argc, char** argv)
         simple_publisher_crash::MyAlerts msg;
         simple_publisher_crash::MyAlert alert;
         alert.code = 1;
+        alert.level = "";
         msg.alerts.push_back(alert);
         alert.code = 2;
         msg.alerts.push_back(alert);
