@@ -1,6 +1,7 @@
 #include <ros/ros.h>
 #include "ros/console.h"
 #include "simple_publisher_crash/MyAlerts.h"
+#include <string>
 
 int main(int argc, char** argv)
 {
@@ -19,11 +20,16 @@ int main(int argc, char** argv)
         simple_publisher_crash::MyAlert alert;
         alert.code = 1;
         alert.level = "";
-        msg.alerts.push_back(alert);
-        alert.code = 2;
-        msg.alerts.push_back(alert);
-        alert.code = 3;
-        msg.alerts.push_back(alert);
+        for (int i = 0; i < 1000; i++)
+        {
+            alert.code = i;
+            alert.level = std::to_string(i);
+            msg.alerts.push_back(alert);
+        }
+        // alert.code = 2;
+        // msg.alerts.push_back(alert);
+        // alert.code = 3;
+        // msg.alerts.push_back(alert);
 
         alertsPub.publish(msg);
 
