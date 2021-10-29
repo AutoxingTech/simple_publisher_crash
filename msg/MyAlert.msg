@@ -2,3 +2,5 @@
 int32 code
 # Level of alert, example: "error", "warning"
 string level
+# Descriptive text, example: "/planning is not running."
+string msg

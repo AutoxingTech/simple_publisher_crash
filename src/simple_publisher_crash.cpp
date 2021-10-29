@@ -20,10 +20,12 @@ int main(int argc, char** argv)
         simple_publisher_crash::MyAlert alert;
         alert.code = 1;
         alert.level = "";
-        for (int i = 0; i < 1000; i++)
+        alert.msg = "";
+        for (int i = 0; i < 10; i++)
         {
             alert.code = i;
             alert.level = std::to_string(i);
+            alert.msg = std::to_string(i) + "msg";
             msg.alerts.push_back(alert);
         }
         // alert.code = 2;
