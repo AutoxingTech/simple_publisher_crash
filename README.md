@@ -5,7 +5,7 @@
 - [Program to Reproduct the Bug](#program-to-reproduct-the-bug)
 - [Progress](#progress)
 
-> :warning: **This has be confirmed as a GCC bug on ARM64.**: https://github.com/ros/ros_comm/issues/2197
+:warning: **This has be confirmed as a GCC bug on ARM64.**: https://github.com/ros/ros_comm/issues/2197
 
 ## Bug Description
 
