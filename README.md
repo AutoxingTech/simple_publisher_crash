@@ -5,6 +5,8 @@
 - [Program to Reproduct the Bug](#program-to-reproduct-the-bug)
 - [Progress](#progress)
 
+> :warning: **This has be confirmed as a GCC bug on ARM64.**: https://github.com/ros/ros_comm/issues/2197
+
 ## Bug Description
 
 With ROS noetic on Raspberry PI model 4B(64bit ARM), we frequently encounter ROS message related problems.
